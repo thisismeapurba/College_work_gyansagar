@@ -1,0 +1,210 @@
+<html>
+<head>
+	<title>Official data insert</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+			   $(document).ready(function () {
+			   //Disable cut copy paste
+			  $('body').bind('cut copy paste', function (e) {
+				e.preventDefault();
+			   });
+		   
+			//Disable mouse right click
+			  $("body").on("contextmenu",function(e){
+				return false;
+			  });
+			  
+			   
+			  			  });
+
+		   </script>
+   <style type="text/css">
+  
+	<style>
+		.myClass
+		{
+			width: 500px;
+		}
+		
+		.parentName
+		{
+			width: 300px;
+		}
+		
+		textarea
+		{
+			width: 300px;
+			height: 100px;
+		}
+		
+		#add
+		{
+			border: 1px solid black;
+		}
+		
+		#stud
+		{
+			border-right: 1px solid black;
+		}
+		.boxes
+	 {
+		background-color: #a3f7b1;
+		height: 50px;
+		margin-top: 5px;
+		border: 2px solid cornsilk;
+	}
+	.boxess{
+	background-color: ;
+		height: 50px;
+		margin-top: 5px;
+		border: 2px solid cornsilk;
+	}
+
+	.boxesEnd
+	{
+		background-color: khaki;
+		border: 3px solid white ;
+	}
+	
+	.round
+	{
+		border-radius : 20px;
+	}
+		
+	
+	</style>
+	
+	
+
+	
+	
+</head>
+<body style="background-color:#E0FBAD  ">
+  
+	<center><h2>ONLY FOR OFFICE USE </h2></center>
+	<center><h3>STUDENT  REGISTRATION FORM</h3></center>
+	<center><h3><b>GYANSAGAR , A step towards +ve change</b> </h3></center>
+	<center><h3>NATIONAL INSTITUTE OF TECHNOLOGY :: SILCHAR </h3></center>
+  <marquee> <h4 style="margin-bottom:0px;margin-top:0px;"><font color="green" > GYANSAGAR registeration portal :: official data insertion</font></h4></marquee>
+	<hr>
+	
+	<div class="container">
+	     <div class"row">
+		   <div class="col-md-6  boxesEnd round">
+		    <b><h3 style="color:red"><center><b>Registration part</b></center></h3> </b>
+		<marquee>    <h4 style="color:#1B097E">***Those who submitted registration form on 19/08/17 only </h4></marquee>
+	
+		<form action="g_insert.php" method="post" style="padding-top:50px;padding-left:30px">
+		1)<b>Name : </b>&emsp;&emsp;&emsp;&emsp; <input type="text" name="name" class="myClass" placeholder="Name" required><br><br>
+		2) <b>Father's Name :</b><input type="text" name="father" placeholder="Father's Name" required >
+				
+				<br><br>
+		
+		3) <b>Sex : </b> &emsp;&emsp;&emsp;&emsp;
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="other">Other
+				
+				<br><br>
+				
+		4)<b>GYANSAGAR Registration ID. : </b><input type="text" name="g_registration" placeholder="GYANSAGAR ID" required> 
+		     
+			 <br></br>
+			 
+		5)<b>Scholar ID. :</b>&emsp;&nbsp;<input type="text" name="registration" placeholder="xx-x-x-xxx" required>
+				
+				<br><br>
+				
+		
+		6)<b>Branch :</b>&emsp;&emsp;&emsp; <input type="text" name="branch" placeholder="Branch" required>
+				
+				<br><br>
+			
+		
+		7)<b>Date Of Birth :</b>&emsp;<input type="date" name="dob" required>
+				
+				<br><br>
+			
+		8)<b>Blood Group :</b>&emsp;<input type="text" name="blood" placeholder="Blood Group" >
+				
+				<br><br>
+		
+		9)<b>Mobile No. :</b>&emsp;&emsp;<input type="text" name="mobile" placeholder="(+91)-xxxxxxxxxx" required >
+		          <br><br>
+		10)<b>E-mail. :</b>&emsp;&emsp;&emsp;<input type="text" name="email" placeholder="xxx@xxx.com" required>
+				
+				<br><br>
+		
+		
+		
+			
+		
+				
+	
+	
+			<center><input class="btn btn-primary" type="submit" name="submit1" value="Insert"></center>	
+			
+		</form>
+		
+        </div>
+		<div class="col-md-6 boxesEnd round" style="padding-top:0px ; padding-left:30px">
+		  <b><h3 style="color:red"><center><b>Edit/Correction Part</b></center></h3> </b> 
+		  <marquee>    <h4 style="color:#1B097E">***Those who submitted registration form on 19/08/17 only </h4></marquee><br/><br/>
+		<form action="showData_g_n.php" method="post">
+		
+		1)<b>Name : </b> &emsp; &emsp; &emsp;<input type="text" name="name" class="myClass" placeholder="Name" required><br><br>
+		
+		2)<b>Scholar ID. :</b>&emsp;<input type="text" name="registration" placeholder="xx-x-x-xxx" required> <br/> <br/>
+		
+		3)<b>GYANSAGAR Registration ID. : </b><input type="text" name="g_registration" placeholder="GYANSAGAR ID" required> <br/><br/>
+		
+		<center><input class="btn btn-primary" type="submit" name="submit1" value="Edit"></center>	
+			
+		</form>
+		
+		     
+			 <br></br>
+			 
+				
+				<br><br>
+				
+		</div>
+	</div>	
+		<div class="row"> 
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/><div class="col-md-6 boxes round " style="padding-left:40px;border-right:8px solid white">
+	
+	 <center> <h4><b>  <a href="export.php" target="_blank"> View  registered student list  & import as excel format</a>    </b></h4></center>
+	<form action="export.php" target="_blank" method="post">
+ <!--	 <center>  <input type="submit"  name="export_excel" class="btn btn-success" value="View all data"> </center> -->
+	</form>
+	</div><br/><br/><br/><br/><br/><br/>
+	<div class="col-md-6 boxes round" style="padding-left:40px;border-right:8px solid white">
+	 <center> <h4><b>  <a href="pdf_data.php" target="_blank">View  registered student list in pdf format</a>    </b></h4></center>
+	<form action="pdf_data.php" target="_blank" method="post">
+	<!-- <center>  <input type="submit"  name="export_excel" class="btn btn-success" value="View all data "> </center> -->
+	</form>
+	</div>
+	
+	 
+    </div>
+	<div class="row">
+	 <div class="col-md-12" boxess>  &emsp; <br/> &emsp;</div>
+	</div>
+		
+		
+		</div>
+	
+	
+	
+	
+</body>
+
+</html>
